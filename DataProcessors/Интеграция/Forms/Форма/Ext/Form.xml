@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="47">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<UsualGroup name="Кнопки" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>true</ShowTitle>
+					<ExtendedTooltip name="КнопкиРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<Button name="ПолучитьЗаписи" id="7">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучитьЗаписи</CommandName>
+							<ExtendedTooltip name="ПолучитьЗаписиРасширеннаяПодсказка" id="8"/>
+						</Button>
+						<Button name="ОбработкаОчереди" id="5">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбработкаОчереди</CommandName>
+							<ExtendedTooltip name="ОбработкаОчередиРасширеннаяПодсказка" id="6"/>
+						</Button>
+						<Button name="ПолучениеУслуг" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПолучениеУслуг</CommandName>
+							<ExtendedTooltip name="ПолучениеУслугРасширеннаяПодсказка" id="4"/>
+						</Button>
+						<Button name="ЗагрузитьМастеров" id="9">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗагрузитьМастеров</CommandName>
+							<ExtendedTooltip name="ЗагрузитьМастеровРасширеннаяПодсказка" id="10"/>
+						</Button>
+						<Button name="ВыгрузкаТранзакций" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ТестИнтеграции</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка Транзакций</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ВыгрузкаТранзакцийРасширеннаяПодсказка" id="2"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="49">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<LabelDecoration name="Заглушка3" id="60">
+							<ContextMenu name="Заглушка3КонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="Заглушка3РасширеннаяПодсказка" id="62"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка" id="51">
+							<ContextMenu name="ЗаглушкаКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ЗаглушкаРасширеннаяПодсказка" id="53"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка1" id="54">
+							<ContextMenu name="Заглушка1КонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="Заглушка1РасширеннаяПодсказка" id="56"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка2" id="57">
+							<ContextMenu name="Заглушка2КонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="Заглушка2РасширеннаяПодсказка" id="59"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка4" id="63">
+							<ContextMenu name="Заглушка4КонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="Заглушка4РасширеннаяПодсказка" id="65"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка5" id="66">
+							<ContextMenu name="Заглушка5КонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="Заглушка5РасширеннаяПодсказка" id="68"/>
+						</LabelDecoration>
+						<LabelDecoration name="Заглушка6" id="69">
+							<ContextMenu name="Заглушка6КонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="Заглушка6РасширеннаяПодсказка" id="71"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Константы" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Константы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Константы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КонстантыРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<InputField name="ДатаКонцаЗаписей" id="72">
+							<DataPath>ДатаКонцаЗаписей</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаКонцаЗаписейКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ДатаКонцаЗаписейРасширеннаяПодсказка" id="74"/>
+							<Events>
+								<Event name="OnChange">ДатаКонцаЗаписейПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаКонцаТранзакций" id="19">
+							<DataPath>ДатаКонцаТранзакций</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаКонцаТранзакцийКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ДатаКонцаТранзакцийРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">ДатаКонцаТранзакцийПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаНачалаЗаписей" id="23">
+							<DataPath>ДатаНачалаЗаписей</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаНачалаЗаписейКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ДатаНачалаЗаписейРасширеннаяПодсказка" id="25"/>
+							<Events>
+								<Event name="OnChange">ДатаНачалаЗаписейПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаНачалаТранзакций" id="27">
+							<DataPath>ДатаНачалаТранзакций</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаНачалаТранзакцийКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ДатаНачалаТранзакцийРасширеннаяПодсказка" id="29"/>
+							<Events>
+								<Event name="OnChange">ДатаНачалаТранзакцийПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсURLБазовый" id="76">
+							<DataPath>ЮклайнсURLБазовый</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсURLБазовыйКонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ЮклайнсURLБазовыйРасширеннаяПодсказка" id="78"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсURLБазовыйПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсURLПуть" id="109">
+							<DataPath>ЮклайнсURLПуть</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсURLПутьКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="ЮклайнсURLПутьРасширеннаяПодсказка" id="111"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсURLПутьПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсЗадержкаПовтора" id="35">
+							<DataPath>ЮклайнсЗадержкаПовтора</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсЗадержкаПовтораКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ЮклайнсЗадержкаПовтораРасширеннаяПодсказка" id="37"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсЗадержкаПовтораПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсМаксПовторов" id="39">
+							<DataPath>ЮклайнсМаксПовторов</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсМаксПовторовКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ЮклайнсМаксПовторовРасширеннаяПодсказка" id="41"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсМаксПовторовПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсБлокировкаВремя" id="126">
+							<DataPath>ЮклайнсБлокировкаВремя</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсБлокировкаВремяКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ЮклайнсБлокировкаВремяРасширеннаяПодсказка" id="128"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсБлокировкаВремяПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ЮклайнсРазмерПачки" id="43">
+							<DataPath>ЮклайнсРазмерПачки</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЮклайнсРазмерПачкиКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ЮклайнсРазмерПачкиРасширеннаяПодсказка" id="45"/>
+							<Events>
+								<Event name="OnChange">ЮклайнсРазмерПачкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ID_Компании" id="84">
+							<DataPath>ID_Компании</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ID_КомпанииКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ID_КомпанииРасширеннаяПодсказка" id="86"/>
+							<Events>
+								<Event name="OnChange">ID_КомпанииПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ID_Партнера" id="88">
+							<DataPath>ID_Партнера</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ID_ПартнераКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="ID_ПартнераРасширеннаяПодсказка" id="90"/>
+							<Events>
+								<Event name="OnChange">ID_ПартнераПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТокенПользователя" id="92">
+							<DataPath>ТокенПользователя</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТокенПользователяКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="ТокенПользователяРасширеннаяПодсказка" id="94"/>
+							<Events>
+								<Event name="OnChange">ТокенПользователяПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТокенПартнера" id="80">
+							<DataPath>ТокенПартнера</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТокенПартнераКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ТокенПартнераРасширеннаяПодсказка" id="82"/>
+							<Events>
+								<Event name="OnChange">ТокенПартнераПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Интеграция</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДатаНачалаТранзакций" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала транзакций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаКонцаТранзакций" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата конца транзакций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаНачалаЗаписей" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаКонцаЗаписей" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата конца записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсМаксПовторов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс макс повторов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсURLПуть" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс URLПуть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсРазмерПачки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс размер пачки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсЗадержкаПовтора" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс задержка повтора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсURLБазовый" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс URLБазовый</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТокенПартнера" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен партнера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТокенПользователя" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ID_Компании" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>I d компании</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ID_Партнера" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>I d партнера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЮклайнсБлокировкаВремя" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юклайнс блокировка время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестИнтеграции" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест интеграции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестИнтеграции</Action>
+		</Command>
+		<Command name="ПолучениеУслуг" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получение услуг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получение услуг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучениеУслуг</Action>
+		</Command>
+		<Command name="ОбработкаОчереди" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка очереди</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка очереди</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаОчереди</Action>
+		</Command>
+		<Command name="ПолучитьЗаписи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить записи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьЗаписи</Action>
+		</Command>
+		<Command name="ЗагрузитьМастеров" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить мастеров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить мастеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьМастеров</Action>
+		</Command>
+	</Commands>
+</Form>
