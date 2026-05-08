@@ -53,16 +53,16 @@
 ### 📐 Схема взаимодействия
 ```mermaid
 graph TD
-    subgraph "1С:Предприятие"
-        UI["Клиентский слой"] <--> SRV["Серверный слой: ЮклайнсAPI"]
-        SRV --> DB_Q["Очередь интеграции (Information Register)"]
-        SRV --> DB_M["Метрики (ЮклайнсМетрики)"]
-        SRV --> DB_L["Логи (Журнал логирования)"]
+    subgraph Enterprise[Система 1С]
+        UI[Клиентский слой] <--> SRV[ЮклайнсAPI]
+        SRV --> DB_Q((Очередь))
+        SRV --> DB_M((Метрики))
+        SRV --> DB_L((Логи))
         
-        DB_Q --> PROC["Обработка очереди"]
+        DB_Q --> PROC[Обработка очереди]
     end
     
-    PROC -- "HTTPS" --> YC["YClients API (yclients.com)"]
+    PROC -- HTTPS --> YC{YClients API}
 ```
 
 ### 🔹 Описание слоев
